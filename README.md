@@ -1,5 +1,7 @@
 # Hate-Speech-Detection
+
 Một project để tập ML
+
 📌 Dự án: Phát hiện Hate Speech Tiếng Việt bằng PhoBERT
 🔹 Mô tả dự án
 Dự án này nhằm xây dựng một mô hình phát hiện ngôn từ thù ghét (Hate Speech) trong văn bản tiếng Việt bằng cách sử dụng PhoBERT – một mô hình ngôn ngữ mạnh mẽ được huấn luyện dành riêng cho tiếng Việt.
@@ -39,5 +41,4 @@ Tính các chỉ số accuracy, precision, recall, F1-score.
 Kiểm tra kết quả trên tập test.
 4️⃣ Triển khai & sử dụng:
 
-Dự đoán hate speech trên bình luận mới.
-Có thể triển khai thành API hoặc ứng dụng web.
+
