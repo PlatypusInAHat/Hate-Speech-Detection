@@ -1,0 +1,31 @@
+C:\Users\BINH\AppData\Local\Programs\Python\Python311\Lib\site-packages\huggingface_hub\file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Map: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 24046/24046 [00:08<00:00, 2962.16 examples/s]
+Map: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 6680/6680 [00:03<00:00, 1802.88 examples/s]
+INFO:__main__:Dataset loaded and prepared successfully.
+INFO:__main__:Class weights computed: tensor([0.4031, 4.9940, 3.1359])
+C:\Users\BINH\AppData\Local\Programs\Python\Python311\Lib\site-packages\huggingface_hub\file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+pytorch_model.bin: 100%|████████████████████████████████████████████████████████████████████████████████████████████████| 543M/543M [02:12<00:00, 4.11MB/s]
+C:\Users\BINH\AppData\Local\Programs\Python\Python311\Lib\site-packages\huggingface_hub\file_download.py:140: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\BINH\.cache\huggingface\hub\models--vinai--phobert-base. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Some weights of the model checkpoint at vinai/phobert-base were not used when initializing RobertaForSequenceClassification: ['lm_head.decoder.bias', 'lm_head.layer_norm.bias', 'roberta.pooler.dense.bias', 'lm_head.dense.weight', 'roberta.pooler.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.decoder.weight', 'lm_head.bias']
+- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at vinai/phobert-base and are newly initialized: ['classifier.out_proj.weight', 'classifier.out_proj.bias', 'classifier.dense.weight', 'classifier.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+INFO:__main__:Model loaded successfully.
+INFO:__main__:Using device: cpu
+D:\hate speech\src\train.py:78: FutureWarning: load_metric is deprecated and will be removed in the next major version of datasets. Use 'evaluate.load' instead, from the new library 🤗 Evaluate: https://huggingface.co/docs/evaluate
+  metric = load_metric("accuracy")
+Downloading builder script: 4.21kB [00:00, 68.4kB/s]                                                                                                       
+Traceback (most recent call last):
+  File "D:\hate speech\src\train.py", line 86, in <module>
+    tokenizer = dataset["tokenizer"]
+                ~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\BINH\AppData\Local\Programs\Python\Python311\Lib\site-packages\datasets\dataset_dict.py", line 59, in __getitem__
+    return super().__getitem__(k)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'tokenizer'

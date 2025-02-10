@@ -1,0 +1,8 @@
+ERROR:__main__:Lỗi khi tải dữ liệu: Lỗi khi chuyển đổi nhãn: Có giá trị không hợp lệ trong cột 'label'
+Traceback (most recent call last):
+  File "D:\hate speech\src\train.py", line 35, in <module>
+    dataset = load_and_prepare_datasets()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\hate speech\src\dataset.py", line 32, in load_and_prepare_datasets
+    raise ValueError("Lỗi khi chuyển đổi nhãn: Có giá trị không hợp lệ trong cột 'label'")
+ValueError: Lỗi khi chuyển đổi nhãn: Có giá trị không hợp lệ trong cột 'label'

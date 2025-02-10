@@ -1,0 +1,28 @@
+model:
+  name: "vinai/phobert-base"
+  num_labels: 2
+  dropout: 0.1
+
+data:
+  train_path: "data/train.csv"
+  test_path: "data/test.csv"
+  max_length: 256
+
+training:
+  batch_size: 16
+  epochs: 5
+  learning_rate: 2e-5
+  warmup_steps: 500
+  weight_decay: 0.01
+  gradient_accumulation_steps: 2
+  logging_steps: 50
+  save_total_limit: 2
+
+evaluation:
+  batch_size: 16
+  metrics: ["accuracy", "precision", "recall", "f1"]
+
+paths:
+  output_dir: "./results"
+  model_save_path: "./saved_model"
+  log_dir: "./logs"

@@ -1,0 +1,36 @@
+C:\Users\BINH\AppData\Local\Programs\Python\Python311\Lib\site-packages\huggingface_hub\file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Map: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 24046/24046 [00:06<00:00, 3961.37 examples/s]
+Map: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 6680/6680 [00:01<00:00, 4341.22 examples/s]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+INFO:__main__:Dataset loaded and prepared successfully.
+INFO:__main__:Class weights computed: tensor([0.4031, 4.9940, 3.1359])
+C:\Users\BINH\AppData\Local\Programs\Python\Python311\Lib\site-packages\huggingface_hub\file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Some weights of the model checkpoint at vinai/phobert-base were not used when initializing RobertaForSequenceClassification: ['lm_head.bias', 'roberta.pooler.dense.weight', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.decoder.bias', 'roberta.pooler.dense.bias', 'lm_head.decoder.weight', 'lm_head.layer_norm.bias', 'lm_head.layer_norm.weight']
+- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at vinai/phobert-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+INFO:__main__:Model loaded successfully.
+INFO:__main__:Using device: cpu
+D:\hate speech\src\train.py:79: FutureWarning: load_metric is deprecated and will be removed in the next major version of datasets. Use 'evaluate.load' instead, from the new library 🤗 Evaluate: https://huggingface.co/docs/evaluate
+  metric = load_metric("accuracy")
+Traceback (most recent call last):
+  File "D:\hate speech\src\train.py", line 90, in <module>
+    training_args = TrainingArguments(
+                    ^^^^^^^^^^^^^^^^^^
+  File "<string>", line 111, in __init__
+  File "C:\Users\BINH\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\training_args.py", line 1340, in __post_init__
+    and (self.device.type != "cuda")
+         ^^^^^^^^^^^
+  File "C:\Users\BINH\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\training_args.py", line 1764, in device
+    return self._setup_devices
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BINH\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\utils\generic.py", line 54, in __get__
+    cached = self.fget(obj)
+             ^^^^^^^^^^^^^^
+  File "C:\Users\BINH\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\training_args.py", line 1672, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`

@@ -1,0 +1,7 @@
+{"time":"2025-02-10T01:44:21.6300581+07:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"D:\\hate speech\\wandb\\run-20250210_014421-63trnvkx\\logs\\debug-core.log"}
+{"time":"2025-02-10T01:44:21.777851+07:00","level":"INFO","msg":"created new stream","id":"63trnvkx"}
+{"time":"2025-02-10T01:44:21.777851+07:00","level":"INFO","msg":"stream: started","id":"63trnvkx"}
+{"time":"2025-02-10T01:44:21.777851+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"63trnvkx"}
+{"time":"2025-02-10T01:44:21.777851+07:00","level":"INFO","msg":"sender: started","stream_id":"63trnvkx"}
+{"time":"2025-02-10T01:44:21.777851+07:00","level":"INFO","msg":"handler: started","stream_id":"63trnvkx"}
+{"time":"2025-02-10T01:44:22.5009997+07:00","level":"INFO","msg":"Starting system monitor"}
