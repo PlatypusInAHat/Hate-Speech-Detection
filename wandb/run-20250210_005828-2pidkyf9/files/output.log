@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "D:\hate speech\src\train.py", line 34, in <module>
-    dataset = load_and_prepare_datasets()
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\hate speech\src\dataset.py", line 15, in load_and_prepare_datasets
-    raise ValueError("Dataset must contain 'text' and 'label' columns")
-ValueError: Dataset must contain 'text' and 'label' columns
